@@ -55,16 +55,21 @@ body{
     font-family: var(--font-Kumbh);
     font-size: 18px;
     font-weight: 400, 700;
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
 }
 .container{
+    min-width: 100%;
+    min-height: 100%;
     display: grid;
     place-content: center;
-    
+ 
 }
 .card{
     -webkit-box-shadow: 0px 0px 26px 7px #8C8C8C; 
     box-shadow: 0px 0px 26px 7px #8C8C8C;
-    margin-top: 50%;
+    margin-top: 20%;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -72,11 +77,47 @@ body{
     justify-content: center;
     overflow: hidden;
 }
+.top-background{
+    position: relative;
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-card.svg);
+        top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.bottom-section{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+}
+.profile-image >img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 7px solid white;
+    
+    z-index: 999;
+}
+.profile-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 3rem;
+}
 .address{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    
 }
 .stats{
     display: flex;
@@ -84,6 +125,7 @@ body{
     align-items: center;
     border-top: 2px solid var(--Dark-gray);
     padding-top: 1rem;
+   padding: 1rem;
 }
 .followers, .likes, .photos{
     display: flex;
