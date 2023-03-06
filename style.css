@@ -81,7 +81,7 @@ body{
     position: relative;
     background-color: var(--Dark-cyan);
     background-image: url(images/bg-pattern-card.svg);
-        top: 0;
+        
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -109,15 +109,21 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0.1rem;
   padding-top: 3rem;
+  font-weight: 700;
+}
+.age{
+  font-weight: 400;
+  margin-left: 10px;
+  color: var(--Dark-grayish-blue);
 }
 .address{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    
+    color: var(--Dark-grayish-blue);
 }
 .stats{
     display: flex;
@@ -132,4 +138,10 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    font-weight: 700;
+}
+.fol, .lik, .phot{
+  color: var(--Dark-gray);
+  font-weight: 400;
+  font-size: 0.75rem;
 }
